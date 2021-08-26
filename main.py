@@ -1,6 +1,7 @@
 url = "https://www.linkedin.com/jobs/search/?currentJobId=2682830021&f_AL=true&f_E=2&geoId=103173899&keywords=data%20analyst&location=Kyiv%20City%2C%20Ukraine"
-email = "samir.soudki@lau.edu"
-password = "Summer2014?"
+import os
+email = os.getenv("email")
+password = os.getenv("password")
 
 from selenium import webdriver
 chrome_web_driver = "C:\\Users\\Lenovo\\Desktop\\samourou python\\chromedriver_win32\\chromedriver.exe"
